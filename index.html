@@ -8,20 +8,17 @@
     <meta name="keywords" content="サイトキーワードを,で区切って入力">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="reset.css">
-    <!--[if lt IE 9]>
- <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
- <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
- <![endif]-->
-    <!-- <script src="sample.js"></script> -->
 </head>
 
 <body>
     <!----- header ----->
     <nav>
-        <a href="#">Top</a>
-        <a href="#">About</a>
-        <a href="#">Skills</a>
-        <a href="#">Portfolio</a>
+        <div class="container">
+            <a href="#">Top</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Portfolio</a>
+        </div>
     </nav>
 
     <!-- Top -->
@@ -35,38 +32,30 @@
     <!-- About -->
     <div id="about-wrapper">
         <div class="container">
-            <h1>About</h1>
-            <ul>
-                <li>名前：船坂　国之</li>
-                <li>出身：大阪府</li>
-                <li>活動：techmeetsでWebエンジニアを目指して勉強中</li>
-                <li>その他：ITで人を幸せにしたい。そんな気持ちでサービスを生み出せるよう日々邁進しています。</li>
-            </ul>
+            <div class="heading">
+                <h1>About</h1>
+            </div>
         </div>
     </div>
 
     <!-- Skills -->
-    <div id="skills-wraper">
+    <div id="skills-wrapper">
         <div class="container">
-            <h1>Skills</h1>
-            <ul>
-                <li>WEB:HTML/CSS</li>
-                <li>JavaScript:Node.js/Express/Vue.js</li>
-                <li>Python:Pandas/numpy</li>
-                <li>Others:SQL/Git</li>
-                <li>tools:vscode/github</li>
-            </ul>
+            <div class="heading">
+                <h1>Skills</h1>
+            </div>
+
         </div>
     </div>
 
     <!-- Portfolio -->
     <div id="portfolio-wrapper">
         <div class="container">
-            <h1>Portfolio</h1>
-            なんか実績を載せる
+            <div class="heading">
+                <h1>Portfolio</h1>
+            </div>
         </div>
     </div>
-
 </body>
 
 </html>
