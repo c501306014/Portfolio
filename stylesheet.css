@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.container{
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin:0 auto;
+    text-align: center;
+}
+
+nav{
+    background-color:black;
+    opacity: 0.9;
+    height:50px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+}
+
+nav p{
+    color: white;
+    display: inline-block;
+}
+
+#top-wrapper{
+    height: 100vh;
+    padding: 20% 0;
+    background-color: gray;
+}
+
+#about-wrapper{
+    height: 300px;
+    
+}
+
+#skills-wrapper{
+    height: 300px;
+    background-color: gray;
+}
+
+#portfolio-wrapper{
+    height: 300px;
+}
