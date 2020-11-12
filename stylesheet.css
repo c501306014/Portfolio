@@ -1,17 +1,18 @@
 @charset "UTF-8";
 
 .container{
-    max-width: 1170px;
+    max-width: 117rem;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 1.5rem;
     margin:0 auto;
     text-align: center;
 }
 
+/* nav */
 nav{
     background-color:black;
     opacity: 0.9;
-    height:50px;
+    height:5rem;
     width: 100%;
     position: fixed;
     z-index: 10;
@@ -23,22 +24,41 @@ nav p{
     display: inline-block;
 }
 
+/* top */
+/* top image */
 #top-wrapper{
     height: 100vh;
     padding: 20% 0;
-    background-color: gray;
+    background-image: url('./assets/top.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+/* top filter */
+#top-wrapper::before{
+    content: '';
+    position: absolute;
+    top:0rem;
+    bottom: 0rem;
+    right: 0rem;
+    left: 0rem;
+    background:inherit;
+    filter: brightness(.5);
+    z-index: -1;
 }
 
+/* about */
 #about-wrapper{
-    height: 300px;
+    height: 30rem;
     
 }
 
 #skills-wrapper{
-    height: 300px;
+    height: 30rem;
     background-color: gray;
 }
 
 #portfolio-wrapper{
-    height: 300px;
+    height: 30rem;
 }
