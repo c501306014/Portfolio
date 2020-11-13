@@ -11,22 +11,44 @@
 /* nav */
 nav{
     background-color:black;
-    opacity: 0.9;
-    height:5rem;
+    opacity: 0.8;
+    height:8rem;
     width: 100%;
     position: fixed;
     z-index: 10;
+}
+
+nav .container{
     display: flex;
 }
 
-nav p{
+.menu{
+    display: flex;
+}
+.menu p{
+    line-height: 8rem;
+    width:15rem;
+    padding:0 1rem;
+    font-size: 2.4rem;
     color: white;
-    display: inline-block;
+}
+
+.menu p:hover{
+    background-color: gray;
+    opacity: 0.8;
+}
+
+.logo{
+    margin-right: auto;
+    height:8rem;
+}
+.logo img{
+    height: 100%;
 }
 
 /* top */
-/* top image */
 #top-wrapper{
+    /* top image */
     height: 100vh;
     padding: 20% 0;
     background-image: url('./assets/top.png');
@@ -35,8 +57,8 @@ nav p{
     position: relative;
     z-index: 0;
 }
-/* top filter */
 #top-wrapper::before{
+    /* top filter */
     content: '';
     position: absolute;
     top:0rem;
@@ -46,6 +68,24 @@ nav p{
     background:inherit;
     filter: brightness(.5);
     z-index: -1;
+}
+
+#top-wrapper h1{
+    font-size: 5.2rem;    
+    color: white;
+    border-bottom: inset 1px white;
+}
+
+#top-wrapper p{
+    font-size: 3rem;
+    color:white;
+    padding-top: 1rem;
+    opacity: .7;
+}
+
+.top-message{
+    display: flex;
+    flex-direction: column;
 }
 
 /* about */
