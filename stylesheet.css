@@ -70,10 +70,20 @@ nav .container{
     z-index: -1;
 }
 
-#top-wrapper h1{
-    font-size: 5.2rem;    
-    color: white;
+.heading{
+    display: flex;
+    flex-direction: column;
+}
+
+.heading h1{
+    font-size: 5.2rem;
+    border-bottom: inset 1px black;
+
+}
+
+#top-wrapper .heading h1{
     border-bottom: inset 1px white;
+    color: white;
 }
 
 #top-wrapper p{
@@ -83,22 +93,47 @@ nav .container{
     opacity: .7;
 }
 
-.top-message{
-    display: flex;
-    flex-direction: column;
-}
-
 /* about */
 #about-wrapper{
-    height: 30rem;
-    
+    height: 54rem;
+    background-color: #efefefff;
 }
 
-#skills-wrapper{
-    height: 30rem;
-    background-color: gray;
+.me-image{
+    height: 20rem;
 }
 
-#portfolio-wrapper{
+.about-main{
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: left;
+}
+
+#about-grid{
+    margin-left: 4rem;
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    grid-gap: 1.6rem 0;
+}
+
+
+
+
+/* works */
+#works-wrapper{
+    height: 30rem;
+    background-color:#1d809fff;
+}
+
+#works-wrapper .heading{
+    border-bottom: inset 1px white;
+    color: white;
+}
+
+/* contact */
+#contact-wrapper{
     height: 30rem;
 }
