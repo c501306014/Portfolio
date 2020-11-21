@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 .container{
+    font-size: 1.6rem;
     max-width: 117rem;
     width: 100%;
     padding: 0 1.5rem;
@@ -119,9 +120,6 @@ nav .container{
     grid-gap: 1.6rem 0;
 }
 
-
-
-
 /* works */
 #works-wrapper{
     height: 30rem;
@@ -136,4 +134,19 @@ nav .container{
 /* contact */
 #contact-wrapper{
     height: 30rem;
+}
+
+#contact-form{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact-form div *{
+    border: 0.1rem solid black;
+}
+
+.inputs{
+    width: 30rem;
 }
