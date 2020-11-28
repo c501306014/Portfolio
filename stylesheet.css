@@ -11,11 +11,12 @@
 
 /* nav */
 nav{
-    background-color:black;
-    opacity: 0.8;
+    background-color:#020025;
+    /* opacity: 0.8; */
     height:8rem;
     width: 100%;
-    position: fixed;
+    position: sticky;
+    top: 0;
     z-index: 10;
 }
 
@@ -40,11 +41,13 @@ nav .container{
 }
 
 .logo{
+    display: flex;
+    align-items: center;
     margin-right: auto;
     height:8rem;
 }
 .logo img{
-    height: 100%;
+    height: 75%;
 }
 
 /* top */
@@ -122,9 +125,27 @@ nav .container{
 
 /* works */
 #works-wrapper{
-    height: 30rem;
+    height: 60rem;
     background-color:#1d809fff;
 }
+
+.works-item a, .works-item p{
+    color: white;
+}
+
+#works-wrapper img{
+    width: 40rem;
+    height: 30rem;
+}
+
+.works-contents{
+    margin: 4rem auto;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+
+
 
 #works-wrapper .heading{
     border-bottom: inset 1px white;
@@ -132,11 +153,13 @@ nav .container{
 }
 
 /* contact */
-#contact-wrapper{
-    height: 40rem;
+#contact-wrapper img{
+    width: 25%;
+    
 }
 
 #contact-form{
+    padding: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,6 +184,10 @@ nav .container{
     border: 0.1rem solid black;
 }
 
+#contact-form .item textarea{
+    height: 20rem;
+}
+
 #contact-form .btn-area *{
     margin-top: 1.6rem;
     font-size: 2.4rem;    
@@ -171,6 +198,7 @@ nav .container{
 }
 
 #contact-form .btn-area .submit{
+
     color: white;    
     background-color: #ff7a59ff;
 }
