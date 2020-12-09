@@ -55,7 +55,7 @@ nav .container{
     /* top image */
     height: 100vh;
     padding: 20% 0;
-    background-image: url('./assets/top.png');
+    background-image: url('../images/top.png');
     background-size: cover;
     background-position: center;
     position: relative;
