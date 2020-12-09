@@ -11,6 +11,11 @@ html {
   text-align: center;
 }
 
+.heading h1 {
+  font-size: 5.2rem;
+  border-bottom: inset 1px black;
+}
+
 /* nav */
 nav {
   background-color: #020025;
@@ -49,15 +54,17 @@ nav .container .menu {
   display: flex;
 }
 
-nav .container .menu p {
+nav .container .menu a {
+  display: block;
   line-height: 8rem;
   width: 15rem;
   padding: 0 1rem;
   font-size: 2.4rem;
   color: white;
+  text-decoration: none;
 }
 
-nav .container .menu p:hover {
+nav .container .menu a:hover {
   background-color: gray;
   opacity: 0.8;
 }
@@ -83,8 +90,8 @@ nav .container .menu p:hover {
   right: 0rem;
   left: 0rem;
   background: inherit;
-  -webkit-filter: brightness(0.5);
-          filter: brightness(0.5);
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
   z-index: -1;
 }
 
@@ -110,14 +117,8 @@ nav .container .menu p:hover {
   opacity: .7;
 }
 
-.heading h1 {
-  font-size: 5.2rem;
-  border-bottom: inset 1px black;
-}
-
 /* about */
 #about-wrapper {
-  height: 54rem;
   background-color: #efefefff;
 }
 
@@ -151,7 +152,6 @@ nav .container .menu p:hover {
 
 /* works */
 #works-wrapper {
-  height: 60rem;
   background-color: #1d809fff;
 }
 

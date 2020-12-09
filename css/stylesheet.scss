@@ -13,6 +13,11 @@ html{
     text-align: center;
 }
 
+.heading h1{
+    font-size: 5.2rem;
+    border-bottom: inset 1px black;
+}
+
 /* nav */
 nav{
     background-color:#020025;
@@ -34,12 +39,14 @@ nav{
         }
         .menu{
             display: flex;
-            p{
+            a{
+                display: block;
                 line-height: 8rem;
                 width:15rem;
                 padding:0 1rem;
                 font-size: 2.4rem;
                 color: white;
+                text-decoration: none;
                 &:hover{
                     background-color: gray;
                     opacity: 0.8;
@@ -68,7 +75,7 @@ nav{
         right: 0rem;
         left: 0rem;
         background:inherit;
-        filter: brightness(.5);
+        filter: brightness(.8);
         z-index: -1;
     }
     .container{
@@ -90,14 +97,10 @@ nav{
     }
 }
 
-.heading h1{
-    font-size: 5.2rem;
-    border-bottom: inset 1px black;
-}
+
 
 /* about */
 #about-wrapper{
-    height: 54rem;
     background-color: #efefefff;
     .container{
         .about-main{
@@ -125,7 +128,6 @@ nav{
 
 /* works */
 #works-wrapper{
-    height: 60rem;
     background-color:#1d809fff;
     .container{
         .heading{
