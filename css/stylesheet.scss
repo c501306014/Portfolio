@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+html{
+    font-size:62.5%
+}
+
+.container{
+    font-size: 1.6rem;
+    max-width: 117rem;
+    width: 100%;
+    padding: 0 1.5rem;
+    margin:0 auto;
+    text-align: center;
+}
+
+/* nav */
+nav{
+    background-color:#020025;
+    height:8rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    .container{
+        display: flex;
+        .logo{
+            display: flex;
+            align-items: center;
+            margin-right: auto;
+            height:8rem;
+            img{
+                height: 75%;
+            }
+        }
+        .menu{
+            display: flex;
+            p{
+                line-height: 8rem;
+                width:15rem;
+                padding:0 1rem;
+                font-size: 2.4rem;
+                color: white;
+                &:hover{
+                    background-color: gray;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+/* top */
+#top-wrapper{
+    /* top image */
+    height: 100vh;
+    padding: 20% 0;
+    background-image: url('../images/top.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+    &::before{
+        /* top filter */
+        content: '';
+        position: absolute;
+        top:0rem;
+        bottom: 0rem;
+        right: 0rem;
+        left: 0rem;
+        background:inherit;
+        filter: brightness(.5);
+        z-index: -1;
+    }
+    .container{
+        .heading{
+            display: flex;
+            flex-direction: column;
+            h1{
+                border-bottom: inset 1px white;
+                color: white;
+            }
+            p{
+                font-size: 3rem;
+                color:white;
+                padding-top: 1rem;
+                opacity: .7;
+            }
+        }
+        
+    }
+}
+
+.heading h1{
+    font-size: 5.2rem;
+    border-bottom: inset 1px black;
+}
+
+/* about */
+#about-wrapper{
+    height: 54rem;
+    background-color: #efefefff;
+    .container{
+        .about-main{
+            margin-top: 8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            text-align: left;
+            .item-img{
+                .me-image{
+                    height: 20rem;
+                }
+            }
+            #about-grid{
+                margin-left: 4rem;
+                display: grid;
+                grid-template-columns: 8rem 1fr;
+                grid-gap: 1.6rem 0;
+            }
+        }
+    }
+}
+
+
+/* works */
+#works-wrapper{
+    height: 60rem;
+    background-color:#1d809fff;
+    .container{
+        .heading{
+            border-bottom: inset 1px white;
+            color: white;
+        }
+        .works-contents{
+            margin: 4rem auto;
+            height: 40rem;
+            display: flex;
+            align-items: center;
+            .works-item{
+                a, p{
+                    color: white;
+                }
+                img{
+                    width: 40rem;
+                    height: 30rem;
+                }
+            }
+        }
+    }
+}
+
+/* contact */
+#contact-wrapper{
+    .container{
+        #contact-form{
+            padding: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .item{
+                margin-top: 1.6rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 80rem;
+                .label{
+                    text-align: left;
+                    width: 16rem;
+                }
+                .inputs{
+                    border: 0.1rem solid black;
+                }
+                textarea{
+                    height: 20rem;
+                }
+            }
+            .btn-area {
+                .reset{
+                    margin-top: 1.6rem;
+                    font-size: 2.4rem;    
+                    border-radius: 1rem 1rem;
+                    padding: .8rem 2.4rem;
+                    width: 16rem;
+                }
+                .submit{
+                    margin-top: 1.6rem;
+                    font-size: 2.4rem;    
+                    border-radius: 1rem 1rem;
+                    padding: .8rem 2.4rem;
+                    width: 16rem;
+
+                    color: white;    
+                    background-color: #ff7a59ff;    
+                }
+            }
+        }
+    }
+}
