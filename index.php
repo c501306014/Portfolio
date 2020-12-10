@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="./css/stylesheet.css">
     <script src="https://kit.fontawesome.com/3a7917df6a.js" crossorigin="anonymous"></script>
+    <?php wp_head(); ?>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
     <nav>
         <div class="container">
             <a href="#" class="logo">
-                <img src="./images/logo.png" alt="logo">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="logo">
             </a>
             <div class="menu">
                 <a href="#">Top</a>
@@ -45,7 +46,7 @@
             </div>
             <div class="about-main">
                 <p class="item-img">
-                    <img class="me-image" src="./images/me.png" alt="自分の写真">
+                    <img class="me-image" src="<?php echo get_template_directory_uri(); ?>/images/me.png" alt="自分の写真">
                 </p>
                 <div id="about-grid">
 
@@ -87,7 +88,7 @@
                     <a href="https://techmeets.jp/student/547_funasaka/mosha_kadai/"
                     target="_blank" rel="noopener noreferrer"                >
                         <h2>模写コーディング</h2>
-                        <img src="./images/thumbnail.png" alt="" >
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/thumbnail.png" alt="" >
                     </a>
                     <p>デザインカンプをもとに、静的ページをコーディングしました。</p>
                 </div>
@@ -130,6 +131,7 @@
             </form>
         </div>
     </section>
+    <?php wp_footer(); ?>
 </body>
 
 </html>
