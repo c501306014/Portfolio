@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
+// @import "scroll-snap";
+
 html{
-    font-size:62.5%
+    font-size:62.5%;
 }
 
 .container{
@@ -28,15 +30,13 @@ nav{
     z-index: 10;
     .container{
         display: flex;
-        .logo{
-            display: flex;
-            align-items: center;
-            margin-right: auto;
-            height:8rem;
-            img{
-                height: 75%;
-            }
+        
+        .custom-logo-link{
+            max-height: 8rem;
+            width: auto;
+            margin-right:auto;
         }
+        
         .menu{
             display: flex;
             a{
@@ -58,9 +58,9 @@ nav{
 
 /* top */
 #top-wrapper{
+    padding-top: 8rem;
     /* top image */
     height: 100vh;
-    padding: 20% 0;
     background-image: url('../images/top.png');
     background-size: cover;
     background-position: center;
@@ -79,6 +79,10 @@ nav{
         z-index: -1;
     }
     .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
         .heading{
             display: flex;
             flex-direction: column;
@@ -102,19 +106,15 @@ nav{
 /* about */
 #about-wrapper{
     background-color: #efefefff;
+    height: 100vh;
     .container{
         .about-main{
-            margin-top: 8rem;
+            margin-top: 4rem;
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 2rem;
             text-align: left;
-            .item-img{
-                .me-image{
-                    height: 20rem;
-                }
-            }
             #about-grid{
                 margin-left: 4rem;
                 display: grid;
@@ -129,10 +129,14 @@ nav{
 /* works */
 #works-wrapper{
     background-color:#1d809fff;
+    height: 100vh;
     .container{
         .heading{
             border-bottom: inset 1px white;
             color: white;
+        }
+        .slider{
+            padding: 4rem 0;
         }
         .works-contents{
             margin: 4rem auto;
@@ -154,49 +158,28 @@ nav{
 
 /* contact */
 #contact-wrapper{
-    .container{
-        #contact-form{
-            padding: 4rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            .item{
-                margin-top: 1.6rem;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                width: 80rem;
-                .label{
-                    text-align: left;
-                    width: 16rem;
-                }
-                .inputs{
-                    border: 0.1rem solid black;
-                }
-                textarea{
-                    height: 20rem;
-                }
-            }
-            .btn-area {
-                .reset{
-                    margin-top: 1.6rem;
-                    font-size: 2.4rem;    
-                    border-radius: 1rem 1rem;
-                    padding: .8rem 2.4rem;
-                    width: 16rem;
-                }
-                .submit{
-                    margin-top: 1.6rem;
-                    font-size: 2.4rem;    
-                    border-radius: 1rem 1rem;
-                    padding: .8rem 2.4rem;
-                    width: 16rem;
+    height: 100vh;
 
-                    color: white;    
-                    background-color: #ff7a59ff;    
+    .container{
+        form{
+            margin: 4rem 0;
+            p{
+                label{
+                    text-align: left;
+                    span{
+                        display:inline-block;
+                        width:40rem;
+                    }
+                    input, textarea{
+                        border: 1px solid black;
+                        width:40rem;
+                    }
+                    textarea{
+                        resize: none;
+                    }
                 }
             }
         }
+
     }
 }

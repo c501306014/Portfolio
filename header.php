@@ -6,24 +6,34 @@
     <title>Portfolio</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="./css/stylesheet.css">
     <script src="https://kit.fontawesome.com/3a7917df6a.js" crossorigin="anonymous"></script>
+    <!-- vue js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- vue scroll -->
+    <script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
     <?php wp_head(); ?>
 </head>
 
 <body>
     <!----- header ----->
-    <nav>
+    <nav id="vue-scroll">
         <div class="container">
-            <a href="#" class="logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="logo">
-            </a>
+            <?php
+            the_custom_logo();
+            if (!has_custom_logo()) {
+                bloginfo('name');
+            }
+            ?>
+
             <div class="menu">
-                <a href="#">Top</a>
-                <a href="#">About</a>
-                <a href="#">Works</a>
-                <a href="#">Contact</a>
+                <a v-scroll-to="toTop"  href="#">Top</a>
+                <a v-scroll-to="toAbout" href="#">About</a>
+                <a v-scroll-to="toWorks" href="#">Works</a>
+                <a v-scroll-to="toContact" href="#">Contact</a>
             </div>
         </div>
     </nav>
+<div id="scroll-snap">

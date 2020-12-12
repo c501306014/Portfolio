@@ -1,0 +1,29 @@
+#scroll-snap{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-points-y: repeat(100%);
+    scroll-snap-destination: 0 0;
+    scroll-snap-type: y mandatory;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+}
+
+section{
+    scroll-snap-align:start;
+    min-height: 100%;
+    flex: 1;
+}

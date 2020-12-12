@@ -33,19 +33,10 @@ nav .container {
   display: flex;
 }
 
-nav .container .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+nav .container .custom-logo-link {
+  max-height: 8rem;
+  width: auto;
   margin-right: auto;
-  height: 8rem;
-}
-
-nav .container .logo img {
-  height: 75%;
 }
 
 nav .container .menu {
@@ -71,9 +62,9 @@ nav .container .menu a:hover {
 
 /* top */
 #top-wrapper {
+  padding-top: 8rem;
   /* top image */
   height: 100vh;
-  padding: 20% 0;
   background-image: url("../images/top.png");
   background-size: cover;
   background-position: center;
@@ -93,6 +84,19 @@ nav .container .menu a:hover {
   -webkit-filter: brightness(0.8);
           filter: brightness(0.8);
   z-index: -1;
+}
+
+#top-wrapper .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
 #top-wrapper .container .heading {
@@ -120,10 +124,11 @@ nav .container .menu a:hover {
 /* about */
 #about-wrapper {
   background-color: #efefefff;
+  height: 100vh;
 }
 
 #about-wrapper .container .about-main {
-  margin-top: 8rem;
+  margin-top: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,10 +140,6 @@ nav .container .menu a:hover {
           align-items: center;
   font-size: 2rem;
   text-align: left;
-}
-
-#about-wrapper .container .about-main .item-img .me-image {
-  height: 20rem;
 }
 
 #about-wrapper .container .about-main #about-grid {
@@ -153,11 +154,16 @@ nav .container .menu a:hover {
 /* works */
 #works-wrapper {
   background-color: #1d809fff;
+  height: 100vh;
 }
 
 #works-wrapper .container .heading {
   border-bottom: inset 1px white;
   color: white;
+}
+
+#works-wrapper .container .slider {
+  padding: 4rem 0;
 }
 
 #works-wrapper .container .works-contents {
@@ -181,66 +187,29 @@ nav .container .menu a:hover {
 }
 
 /* contact */
-#contact-wrapper .container #contact-form {
-  padding: 4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+#contact-wrapper {
+  height: 100vh;
 }
 
-#contact-wrapper .container #contact-form .item {
-  margin-top: 1.6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 80rem;
+#contact-wrapper .container form {
+  margin: 4rem 0;
 }
 
-#contact-wrapper .container #contact-form .item .label {
+#contact-wrapper .container form p label {
   text-align: left;
-  width: 16rem;
 }
 
-#contact-wrapper .container #contact-form .item .inputs {
-  border: 0.1rem solid black;
+#contact-wrapper .container form p label span {
+  display: inline-block;
+  width: 40rem;
 }
 
-#contact-wrapper .container #contact-form .item textarea {
-  height: 20rem;
+#contact-wrapper .container form p label input, #contact-wrapper .container form p label textarea {
+  border: 1px solid black;
+  width: 40rem;
 }
 
-#contact-wrapper .container #contact-form .btn-area .reset {
-  margin-top: 1.6rem;
-  font-size: 2.4rem;
-  border-radius: 1rem 1rem;
-  padding: .8rem 2.4rem;
-  width: 16rem;
-}
-
-#contact-wrapper .container #contact-form .btn-area .submit {
-  margin-top: 1.6rem;
-  font-size: 2.4rem;
-  border-radius: 1rem 1rem;
-  padding: .8rem 2.4rem;
-  width: 16rem;
-  color: white;
-  background-color: #ff7a59ff;
+#contact-wrapper .container form p label textarea {
+  resize: none;
 }
 /*# sourceMappingURL=stylesheet.css.map */
