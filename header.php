@@ -3,12 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Portfolio</title>
+    <title>KF's Portfolio</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <!-- viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- css reset -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/3a7917df6a.js" crossorigin="anonymous"></script>
     <!-- vue js -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
