@@ -11,6 +11,10 @@ html {
   text-align: center;
 }
 
+section {
+  overflow: auto;
+}
+
 .heading h1 {
   font-size: 5.2rem;
   border-bottom: inset 1px black;
@@ -118,6 +122,20 @@ nav .container .menu a:hover {
   height: 100vh;
 }
 
+#about-wrapper .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 #about-wrapper .container .about-main {
   margin-top: 4rem;
   display: -webkit-box;
@@ -148,13 +166,43 @@ nav .container .menu a:hover {
   height: 100vh;
 }
 
+#works-wrapper .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 #works-wrapper .container .heading {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#works-wrapper .container .heading h1 {
+  width: 100%;
   border-bottom: inset 1px white;
   color: white;
 }
 
 #works-wrapper .container .slider {
-  padding: 4rem 0;
+  margin: calc(inherit/10);
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
 }
 
 #works-wrapper .container .works-contents {
@@ -180,6 +228,23 @@ nav .container .menu a:hover {
 /* contact */
 #contact-wrapper {
   height: 100vh;
+}
+
+#contact-wrapper .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #contact-wrapper .container form {

@@ -13,6 +13,11 @@ html{
     padding: 0 1.5rem;
     margin:0 auto;
     text-align: center;
+    
+}
+
+section{
+    overflow: auto;
 }
 
 .heading h1{
@@ -100,6 +105,10 @@ nav{
     background-color: #efefefff;
     height: 100vh;
     .container{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         .about-main{
             margin-top: 4rem;
             display: flex;
@@ -123,12 +132,26 @@ nav{
     background-color:#1d809fff;
     height: 100vh;
     .container{
-        .heading{
-            border-bottom: inset 1px white;
-            color: white;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+
+        .heading {
+            flex: 0 0 50%;
+            display:flex;
+            align-items: center;
+            h1{
+                width: 100%;
+                border-bottom: inset 1px white;
+                color: white;
+            }
         }
+        
         .slider{
-            padding: 4rem 0;
+            margin: calc(inherit/10);
+            flex: 1 0 50%;
         }
         .works-contents{
             margin: 4rem auto;
@@ -152,7 +175,13 @@ nav{
 #contact-wrapper{
     height: 100vh;
 
+
     .container{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         form{
             margin: 4rem 0;
             p{
