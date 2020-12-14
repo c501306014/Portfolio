@@ -60,26 +60,17 @@ nav{
 /* top */
 #top-wrapper{
     padding-top: 8rem;
-    /* top image */
     height: 100vh;
-    background-image: url('../images/top.png');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    z-index: 0;
-    &::before{
-        /* top filter */
-        content: '';
+    img{
         position: absolute;
-        top:0rem;
-        bottom: 0rem;
-        right: 0rem;
-        left: 0rem;
-        background:inherit;
-        filter: brightness(.8);
+        top:0;
+        width:100%;
+        height: 100%;
+        object-fit: cover;
         z-index: -1;
     }
     .container{
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -183,4 +174,51 @@ nav{
         }
 
     }
+}
+
+#scroll-to-top{
+    a{
+        display: block;
+        text-align: center;
+        width:5rem;
+        height: 5rem;
+        border-radius: 50%;
+        font-size: 3.2rem;
+        position:fixed;
+        bottom: 2rem;
+        right: 2rem;
+        text-decoration: none;
+        background-color: blue;
+        &:hover{
+            background-color: lighten(blue, 10%);
+            
+            display: block;
+            filter: drop-shadow( 0 0 .5rem rgba(0,0,0,.5));
+            transition: .2s;
+        }
+        &:active{
+            background-color: blue;
+        }
+    }
+    .fas{
+        color:white;
+        line-height: 5rem;
+    }
+}
+
+.fade-in{
+    animation: fadeIn .5s ease forwards;
+}
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.fade-out{
+    animation: fadeOut .5s ease forwards;
+}
+
+@keyframes fadeOut{
+    0% {opacity: 1;}
+    100%{opacity: 0;}
 }

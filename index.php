@@ -4,14 +4,13 @@
 
     <!-- Top -->
     <section id="top-wrapper">
+        <?php if(get_header_image()):   ?>
+        <img class="hero-image" src="<?php header_image() ?>" alt="">
+        <?php endif; ?>    
         <div class="container">
             <div class="heading">
-                <?php
-                $page_data = get_page_by_path( 'top-page' );
-                $page = get_post( $page_data );
-                $content = $page->post_content;
-                echo $content;
-                ?>
+                <h1><?php bloginfo('title'); ?></h1>
+                <p><?php bloginfo('description'); ?></p>
             </div>
         </div>
     </section>
