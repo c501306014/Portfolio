@@ -10,7 +10,7 @@
 /* nav */
 nav{
     margin-top: -$header-height;
-    background-color: #020025;
+    background-color: $header-color;
     height: $header-height;
     width:  100%;
     position:  sticky;
@@ -33,9 +33,15 @@ nav{
                 font-size:  2.4rem;
                 color:  white;
                 text-decoration:  none;
+                transition: .2s;
                 &:hover{
-                    background-color:  gray;
+                    background-color: lighten( $header-color , 80%);
+                    color: $header-color;
                     opacity:  0.8;
+                    transition: .2s;
+                }
+                &:active{
+                    background-color: lighten( $header-color , 60%);
                 }
             }
         }
@@ -176,3 +182,5 @@ nav{
         }
     }
 }
+
+@import "stylesheet-sp";

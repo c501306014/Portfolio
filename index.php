@@ -45,16 +45,16 @@
                 <h1>Works</h1>
             </div>
             <div id="app">
-                <carousel :loop="true">
-                    <div class="slider">
+                <div class="slider">
+                    <carousel :per-page-custom="[[820,2], [0, 1]]" v-bind:navigation-enabled="true">
                         <?php
                         $page_data = get_page_by_path( 'works' );
                         $page = get_post( $page_data );
                         $content = $page->post_content;
                         echo $content;
                         ?>
-                    </div>
-                </carousel>
+                    </carousel>
+                </div>
             </div>
         </div>
     </section>

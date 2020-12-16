@@ -1,6 +1,7 @@
 .VueCarousel-slide{
     display:flex;
     justify-content: center;
+    align-items: center;
     &:hover{
         cursor: grab;
     }
