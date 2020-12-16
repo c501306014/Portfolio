@@ -18,6 +18,20 @@ var scroll = new Vue({
         toContact:{
             el:'#contact-wrapper',
             offset: -header_height
-        }
+        },
+        /* sp対応 */
+        toTop_sp:{
+            el:'#top-wrapper',
+        },
+        toAbout_sp:{
+            el:'#about-wrapper',
+        },
+        toWorks_sp:{
+            el:'#works-wrapper',
+        },
+        toContact_sp:{
+            el:'#contact-wrapper',
+        },
+        ActiveBtn: false
     }
 })

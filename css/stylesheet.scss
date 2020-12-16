@@ -10,7 +10,7 @@
 /* nav */
 nav{
     margin-top: -$header-height;
-    background-color: $header-color;
+    background-color: $main-color;
     height: $header-height;
     width:  100%;
     position:  sticky;
@@ -19,9 +19,14 @@ nav{
     .container{
         display:  flex;
         .custom-logo-link{
+            display: block;
             max-height:  $header-height;
             width:  auto;
             margin-right: auto;
+            .custom-logo{
+                height: $header-height;
+                width: auto;
+            }
         }
         .menu{
             display:  flex;
@@ -35,15 +40,18 @@ nav{
                 text-decoration:  none;
                 transition: .2s;
                 &:hover{
-                    background-color: lighten( $header-color , 80%);
-                    color: $header-color;
+                    background-color: lighten( $main-color , 80%);
+                    color: $main-color;
                     opacity:  0.8;
                     transition: .2s;
                 }
                 &:active{
-                    background-color: lighten( $header-color , 60%);
+                    background-color: lighten( $main-color , 60%);
                 }
             }
+        }
+        .sp{
+            display:none;
         }
     }
 }
@@ -165,14 +173,15 @@ nav{
             margin: 4rem 0;
             p{
                 label{
+                    width:80rem;
                     text-align: left;
                     span{
                         display: inline-block;
-                        width: 40rem;
+                        width: 80rem;
                     }
                     input, textarea{
                         border: 1px solid black;
-                        width: 40rem;
+                        width: 80rem;
                     }
                     textarea{
                         resize: none;
@@ -183,4 +192,5 @@ nav{
     }
 }
 
+@import "stylesheet-tb";
 @import "stylesheet-sp";
