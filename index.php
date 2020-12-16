@@ -46,16 +46,19 @@
             <div class="heading">
                 <h1>Works</h1>
             </div>
-            
-            <div class="slider">
-                <?php
-                    $page_data = get_page_by_path( 'works' );
-                    $page = get_post( $page_data );
-                    $content = $page->post_content;
-                    echo $content;
-                    // echo do_shortcode( '[metaslider id=141 cssclass=""]' );
-                    ?>
 
+            <div id="app">
+                <carousel :loop="true">
+                    <div class="slider">
+                        <?php
+                        $page_data = get_page_by_path( 'works' );
+                        $page = get_post( $page_data );
+                        $content = $page->post_content;
+                        echo $content;
+                        // echo do_shortcode( '[metaslider id=141 cssclass=""]' );
+                        ?>
+                    </div>
+                </carousel>
             </div>
         </div>
     </section>
