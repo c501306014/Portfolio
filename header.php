@@ -16,6 +16,8 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <!-- vue scroll -->
     <script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
+    <!-- vue carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/vue-carousel@0.18.0/dist/vue-carousel.min.js"></script>
     <?php wp_head(); ?>
 </head>
 
