@@ -1,4 +1,3 @@
-
 // vue transition
 .fade-enter-active, .fade-leave-active{
     transition: opacity .5s;
@@ -8,11 +7,11 @@
     opacity: 0;
 }
 
-
 // css animation
 .fade-in{
     animation: fadeIn .5s ease forwards;
 }
+
 @keyframes fadeIn{
     0% {opacity: 0;}
     100%{opacity: 1;}

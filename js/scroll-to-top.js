@@ -1,4 +1,3 @@
-
 var ScrollToTop = new Vue({
     el:'#scroll-to-top',
     data:{
@@ -28,5 +27,4 @@ var ScrollToTop = new Vue({
     destoryed(){
         window.removeEventListener('scroll', this.handleScroll);
     }
-
 })

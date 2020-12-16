@@ -1,4 +1,3 @@
-
 <!-- topへ戻るボタン -->
 <div id="scroll-to-top">
     <transition name="fade">
@@ -8,7 +7,6 @@
     </transition>
 </div>
 
-</div>
     <?php wp_footer(); ?>
 </body>
 

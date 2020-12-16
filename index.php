@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-
-
     <!-- Top -->
     <section id="top-wrapper">
         <?php if(get_header_image()):   ?>
@@ -46,7 +44,6 @@
             <div class="heading">
                 <h1>Works</h1>
             </div>
-
             <div id="app">
                 <carousel :loop="true">
                     <div class="slider">
@@ -55,7 +52,6 @@
                         $page = get_post( $page_data );
                         $content = $page->post_content;
                         echo $content;
-                        // echo do_shortcode( '[metaslider id=141 cssclass=""]' );
                         ?>
                     </div>
                 </carousel>
@@ -69,12 +65,11 @@
             <div class="heading">
                 <h1>Contact</h1>
             </div>
-            <?php
-                echo do_shortcode( '[contact-form-7 id="5" title="コンタクトフォーム 1"]' );
-            ?>
+                <?php
+                    echo do_shortcode( '[contact-form-7 id="5" title="コンタクトフォーム 1"]' );
+                ?>
+            <p class="copyright">© 2020<?php if(date("Y")!=='2020') {echo date("-Y");} ?> All rights reserved, Kuniyuki Funasaka  </p>
         </div>
     </section>
-
-</vue-scroll-snap>
 
 <?php get_footer(); ?>

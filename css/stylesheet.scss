@@ -1,62 +1,41 @@
 @charset "UTF-8";
 
-// @import "scroll-snap";
+@import "variables";
+@import "common";
+
 @import "fade";
-
-html{
-    font-size:62.5%;
-}
-
-.container{
-    font-size: 1.6rem;
-    max-width: 117rem;
-    width: 100%;
-    padding: 0 1.5rem;
-    margin:0 auto;
-    text-align: center;
-    
-}
-
-section{
-    overflow: auto;
-}
-
-.heading h1{
-    font-size: 5.2rem;
-    border-bottom: inset 1px black;
-}
+@import "carousel";
+@import "scroll-to-top";
 
 /* nav */
 nav{
-    margin-top: -8rem;
-    background-color:#020025;
-    height:8rem;
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    margin-top: -$header-height;
+    background-color: #020025;
+    height: $header-height;
+    width:  100%;
+    position:  sticky;
+    top:  0;
+    z-index:  10;
     .container{
-        display: flex;
-        
+        display:  flex;
         .custom-logo-link{
-            max-height: 8rem;
-            width: auto;
-            margin-right:auto;
+            max-height:  $header-height;
+            width:  auto;
+            margin-right: auto;
         }
-        
         .menu{
-            display: flex;
+            display:  flex;
             a{
-                display: block;
-                line-height: 8rem;
-                width:15rem;
-                padding:0 1rem;
-                font-size: 2.4rem;
-                color: white;
-                text-decoration: none;
+                display:  block;
+                line-height:  $header-height;
+                width: 15rem;
+                padding: 0 1rem;
+                font-size:  2.4rem;
+                color:  white;
+                text-decoration:  none;
                 &:hover{
-                    background-color: gray;
-                    opacity: 0.8;
+                    background-color:  gray;
+                    opacity:  0.8;
                 }
             }
         }
@@ -65,41 +44,37 @@ nav{
 
 /* top */
 #top-wrapper{
-    padding-top: 8rem;
-    height: 100vh;
+    padding-top:  $header-height;
+    height:  100vh;
     img{
-        position: absolute;
-        top:0;
-        width:100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
+        position:  absolute;
+        top: 0;
+        width: 100%;
+        height:  100%;
+        object-fit:  cover;
+        z-index:  -1;
     }
     .container{
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
+        display:  flex;
+        justify-content:  center;
+        align-items:  center;
+        height:  100%;
         .heading{
-            display: flex;
-            flex-direction: column;
+            display:  flex;
+            flex-direction:  column;
             h1{
-                border-bottom: inset 1px white;
-                color: white;
+                border-bottom:  inset 1px white;
+                color:  white;
             }
             p{
-                font-size: 3rem;
-                color:white;
-                padding-top: 1rem;
-                opacity: .7;
+                font-size:  3rem;
+                color: white;
+                padding-top:  1rem;
+                opacity:  .7;
             }
         }
-        
     }
 }
-
-
 
 /* about */
 #about-wrapper{
@@ -127,21 +102,18 @@ nav{
     }
 }
 
-
 /* works */
 #works-wrapper{
-    background-color:#1d809fff;
+    background-color: #1d809fff;
     height: 100vh;
     .container{
         height: 100%;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        
-
         .heading {
             flex: 0 0 30%;
-            display:flex;
+            display: flex;
             align-items: center;
             h1{
                 width: 100%;
@@ -149,13 +121,11 @@ nav{
                 color: white;
             }
         }
-        
         .slider{
             margin: calc(inherit/10);
             flex: 1 0 70%;
             color: white;
-            display: flex;
-            a{color:white;}
+            a{color: white;}
             figure{
                 a{
                     img{
@@ -164,30 +134,12 @@ nav{
                         margin: 1.6rem 0;
                         width: 48rem;
                         transition: .3s;
-
                         &:hover{
                             transform: scale(1.1, 1.1);    
                             box-shadow: 0px 3px 10px 10px rgba(0,0,0,0.2);
                             transition: .3s;
                         }
-
                     }
-                }
-            }
-
-        }
-        .works-contents{
-            margin: 4rem auto;
-            height: 40rem;
-            display: flex;
-            align-items: center;
-            .works-item{
-                a, p{
-                    color: white;
-                }
-                img{
-                    width: 40rem;
-                    height: 30rem;
                 }
             }
         }
@@ -197,8 +149,6 @@ nav{
 /* contact */
 #contact-wrapper{
     height: 100vh;
-
-
     .container{
         height: 100%;
         display: flex;
@@ -211,12 +161,12 @@ nav{
                 label{
                     text-align: left;
                     span{
-                        display:inline-block;
-                        width:40rem;
+                        display: inline-block;
+                        width: 40rem;
                     }
                     input, textarea{
                         border: 1px solid black;
-                        width:40rem;
+                        width: 40rem;
                     }
                     textarea{
                         resize: none;
@@ -224,51 +174,5 @@ nav{
                 }
             }
         }
-
-    }
-}
-
-#scroll-to-top{
-    a{
-        display: block;
-        text-align: center;
-        width:5rem;
-        height: 5rem;
-        border-radius: 50%;
-        font-size: 3.2rem;
-        position:fixed;
-        bottom: 2rem;
-        right: 2rem;
-        text-decoration: none;
-        background-color: blue;
-        transition: .3s;
-        &:hover{
-            background-color: lighten(blue, 10%);
-            
-            display: block;
-            filter: drop-shadow( 0 0 .5rem rgba(0,0,0,.5));
-            transition: .2s;
-        }
-        &:active{
-            background-color: blue;
-        }
-    }
-    .fas{
-        color:white;
-        line-height: 5rem;
-    }
-}
-
-.VueCarousel-slide{
-    display:flex;
-    justify-content: center;
-    &:hover{
-        cursor: grab;
-    }
-    &:active{
-        cursor: grabbing;
-    }
-    .wp-block-group{
-        margin: 0 1.6rem;
     }
 }
