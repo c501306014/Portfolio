@@ -46,7 +46,7 @@
             </div>
             <div id="app">
                 <div class="slider">
-                    <carousel :per-page-custom="[[820,2], [0, 1]]" v-bind:navigation-enabled="true">
+                    <carousel :per-page-custom="[[720,2], [0, 1]]">
                         <?php
                         $page_data = get_page_by_path( 'works' );
                         $page = get_post( $page_data );
