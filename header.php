@@ -38,5 +38,24 @@
                 <a v-scroll-to="toWorks" href="#">Works</a>
                 <a v-scroll-to="toContact" href="#">Contact</a>
             </div>
+            <div class="sp">
+                <!-- ハンバーガーメニュー -->
+                <div class="hamburger_btn" v-on:click='ActiveBtn=!ActiveBtn'>
+                    <span class="line line_01" v-bind:class="{'btn_line01':ActiveBtn}"></span>
+                    <span class="line line_02" v-bind:class="{'btn_line02':ActiveBtn}"></span>
+                    <span class="line line_03" v-bind:class="{'btn_line03':ActiveBtn}"></span>
+                </div>
+                <!-- サイドバー -->
+                <transition name="manu-sp">
+                    <div class="menu-sp" v-show="ActiveBtn" v-bind:class="{'fade-in': ActiveBtn, 'fade-out': !ActiveBtn}">
+                        <ul>
+                            <li><a href="#" v-on:click='ActiveBtn=!ActiveBtn' v-scroll-to="toTop_sp">Top</a></li>
+                            <li><a href="#" v-on:click='ActiveBtn=!ActiveBtn' v-scroll-to="toAbout_sp">About</a></li>
+                            <li><a href="#" v-on:click='ActiveBtn=!ActiveBtn' v-scroll-to="toWorks_sp">Works</a></li>
+                            <li><a href="#" v-on:click='ActiveBtn=!ActiveBtn' v-scroll-to="toContact_sp">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </transition>
+            </div>
         </div>
     </nav>
