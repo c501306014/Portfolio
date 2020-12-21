@@ -9,7 +9,7 @@
     <!-- viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <!-- css reset -->
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/filipelinhares/ress/master/dist/ress.min.css">
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/3a7917df6a.js" crossorigin="anonymous"></script>
     <!-- vue js -->
@@ -33,7 +33,7 @@
             ?>
 
             <div class="menu">
-                <a v-scroll-to="toTop"  href="#">Top</a>
+                <a v-scroll-to="toTop" href="#">Top</a>
                 <a v-scroll-to="toAbout" href="#">About</a>
                 <a v-scroll-to="toWorks" href="#">Works</a>
                 <a v-scroll-to="toContact" href="#">Contact</a>
