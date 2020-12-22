@@ -154,14 +154,17 @@ nav .container {
 }
 
 nav .container .custom-logo-link {
-  display: block;
-  max-height: 8rem;
-  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: auto;
 }
 
 nav .container .custom-logo-link .custom-logo {
-  height: 8rem;
+  height: 5rem;
   width: auto;
 }
 
@@ -253,7 +256,7 @@ nav .container .sp {
 /* about */
 #about-wrapper {
   background-color: #efefefff;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #about-wrapper .container {
@@ -297,7 +300,7 @@ nav .container .sp {
 /* works */
 #works-wrapper {
   background-color: #1d809fff;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #works-wrapper .container {
@@ -365,7 +368,7 @@ nav .container .sp {
 
 /* contact */
 #contact-wrapper {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #contact-wrapper .container {
@@ -420,14 +423,6 @@ nav .container .sp {
     font-size: 2.4rem;
   }
   /* nav */
-  nav .container .custom-logo-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   nav .container .custom-logo-link .custom-logo {
     height: 4rem;
   }

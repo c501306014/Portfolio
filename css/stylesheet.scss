@@ -19,12 +19,11 @@ nav{
     .container{
         display:  flex;
         .custom-logo-link{
-            display: block;
-            max-height:  $header-height;
-            width:  auto;
+            display: flex;
+            align-items: center;
             margin-right: auto;
             .custom-logo{
-                height: $header-height;
+                height: 5rem;
                 width: auto;
             }
         }
@@ -93,7 +92,7 @@ nav{
 /* about */
 #about-wrapper{
     background-color: #efefefff;
-    height: 100vh;
+    min-height: 100vh;
     .container{
         height: 100%;
         display: flex;
@@ -119,7 +118,7 @@ nav{
 /* works */
 #works-wrapper{
     background-color: #1d809fff;
-    height: 100vh;
+    min-height: 100vh;
     .container{
         height: 100%;
         display: flex;
@@ -162,7 +161,7 @@ nav{
 
 /* contact */
 #contact-wrapper{
-    height: 100vh;
+    min-height: 100vh;
     .container{
         height: 100%;
         display: flex;
