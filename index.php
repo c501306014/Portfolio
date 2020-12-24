@@ -3,7 +3,7 @@
 <!-- Top -->
 <section id="top-wrapper">
     <?php if (get_header_image()) :   ?>
-        <img class="hero-image" src="<?php header_image() ?>" alt="">
+        <img id="hero-image" src="<?php header_image() ?>" alt="">
     <?php endif; ?>
     <div class="container">
         <div class="heading">

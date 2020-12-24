@@ -58,7 +58,7 @@ nav{
 /* top */
 #top-wrapper{
     padding-top:  $header-height;
-    height:  100vh;
+    max-height: 100vh;
     img{
         position:  absolute;
         top: 0;

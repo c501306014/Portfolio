@@ -205,7 +205,7 @@ nav .container .sp {
 /* top */
 #top-wrapper {
   padding-top: 8rem;
-  height: 100vh;
+  max-height: 100vh;
 }
 
 #top-wrapper img {

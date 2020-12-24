@@ -7,7 +7,16 @@
     </transition>
 </div>
 
-    <?php wp_footer(); ?>
+<!-- <script>
+    let vh = window.innerHeight;
+    document.getElementById('top-wrapper').style.height = vh / 10 + 'rem';
+    window.addEventListener('resize', () => {
+        let vh = window.innerHeight;
+        document.getElementById('top-wrapper').style.height = vh / 10 + 'rem';
+    })
+</script> -->
+
+<?php wp_footer(); ?>
 </body>
 
 </html>
