@@ -84,13 +84,13 @@
         .container{
             form{
                 p{
+                    width: 50rem;
                     label{
                         width:50rem;
-                        span{
-                            width: 50rem;
-                        }
-                        input, textarea{
-                            width: 50rem;
+                        .wpcf7-form-control-wrap{
+                            input, textarea{
+                                width: 50rem;
+                            }
                         }
                     }
                 }

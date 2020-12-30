@@ -59,7 +59,7 @@
     </div>
 </section>
 
-<!-- Portfolio -->
+<!-- contact -->
 <section id="contact-wrapper">
     <div class="container">
         <div class="heading">

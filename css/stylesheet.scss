@@ -93,10 +93,12 @@ nav{
 #about-wrapper{
     background-color: #efefefff;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
     .container{
         height: 100%;
         display: flex;
-        justify-content: center;
+        align-content: space-between;
         flex-direction: column;
         .about-main{
             margin-top: 4rem;
@@ -119,13 +121,12 @@ nav{
 #works-wrapper{
     background-color: #1d809fff;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
     .container{
         height: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
         .heading {
-            flex: 0 0 30%;
+            // flex: 0 0 30%;
             display: flex;
             align-items: center;
             h1{
@@ -135,8 +136,9 @@ nav{
             }
         }
         .slider{
-            margin: calc(inherit/10);
-            flex: 1 0 70%;
+            margin-top: 4rem;
+            // margin: calc(inherit/10);
+            // flex: 1 0 70%;
             color: white;
             a{color: white;}
             figure{
@@ -155,6 +157,10 @@ nav{
                     }
                 }
             }
+            .wp-block-group__inner-container{
+                display: grid;
+                grid-template-rows: 3rem 3rem 40rem;
+            }
         }
     }
 }
@@ -162,18 +168,45 @@ nav{
 /* contact */
 #contact-wrapper{
     min-height: 100vh;
+    display: flex;
+    align-items: center;
     .container{
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        .heading{
+            width: 100%; 
+        }
         form{
-            margin: 4rem 0;
+            margin: 4rem auto;
+            .submit-btn{
+                // text-align: center;
+                /* Contact Submit Button */
+                .wpcf7-submit{
+                    display: block;
+                    font-size:2.4rem;
+                    color:white;
+                    padding:1rem 2.4rem;
+                    border-radius:1rem 1rem;
+                    background-color:#ff7a59;
+                    box-shadow: 0 .4rem darken(#ff7a59, 50%);
+                    margin: 0 auto;
+                    &:active{
+                        position: relative;
+                        top: .4rem;
+                        box-shadow: none;
+                    }
+                }
+            }
             p{
-                label{
+                margin-top: .4rem;
+                width: 80rem;
+                text-align: left;
+                .wpcf7-form-control-wrap{ //span
                     width:80rem;
-                    text-align: left;
+                    // text-align: left;
                     span{
                         display: inline-block;
                         width: 80rem;
@@ -185,6 +218,26 @@ nav{
                     textarea{
                         resize: none;
                     }
+                }
+                .require-label{
+                    padding: .2rem .4rem;
+                    border-radius: 1rem 0;
+                    color: white;
+                    font-size: 1.2rem;
+                }
+                .must{
+                    background-color: rgb(202, 0, 0);
+                }
+                .arbitrary{
+                    background-color: rgb(87, 87, 87);
+                }
+            }
+            .twitter{
+                text-align: center;
+                .fa-twitter{
+                    font-size: 1.6rem;
+                    color: #00acee;
+                    text-decoration: none;
                 }
             }
         }

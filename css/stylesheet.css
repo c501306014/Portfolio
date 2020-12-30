@@ -257,6 +257,12 @@ nav .container .sp {
 #about-wrapper {
   background-color: #efefefff;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #about-wrapper .container {
@@ -264,9 +270,8 @@ nav .container .sp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -301,26 +306,19 @@ nav .container .sp {
 #works-wrapper {
   background-color: #1d809fff;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #works-wrapper .container {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 #works-wrapper .container .heading {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 30%;
-          flex: 0 0 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -336,10 +334,7 @@ nav .container .sp {
 }
 
 #works-wrapper .container .slider {
-  margin: calc(inherit/10);
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 70%;
-          flex: 1 0 70%;
+  margin-top: 4rem;
   color: white;
 }
 
@@ -366,9 +361,22 @@ nav .container .sp {
   transition: .3s;
 }
 
+#works-wrapper .container .slider .wp-block-group__inner-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 3rem 3rem 40rem;
+      grid-template-rows: 3rem 3rem 40rem;
+}
+
 /* contact */
 #contact-wrapper {
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #contact-wrapper .container {
@@ -388,27 +396,84 @@ nav .container .sp {
           flex-direction: column;
 }
 
-#contact-wrapper .container form {
-  margin: 4rem 0;
+#contact-wrapper .container .heading {
+  width: 100%;
 }
 
-#contact-wrapper .container form p label {
+#contact-wrapper .container form {
+  margin: 4rem auto;
+}
+
+#contact-wrapper .container form .submit-btn {
+  /* Contact Submit Button */
+}
+
+#contact-wrapper .container form .submit-btn .wpcf7-submit {
+  display: block;
+  font-size: 2.4rem;
+  color: white;
+  padding: 1rem 2.4rem;
+  border-radius: 1rem 1rem;
+  background-color: #ff7a59;
+  -webkit-box-shadow: 0 0.4rem #591200;
+          box-shadow: 0 0.4rem #591200;
+  margin: 0 auto;
+}
+
+#contact-wrapper .container form .submit-btn .wpcf7-submit:active {
+  position: relative;
+  top: .4rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#contact-wrapper .container form p {
+  margin-top: .4rem;
   width: 80rem;
   text-align: left;
 }
 
-#contact-wrapper .container form p label span {
+#contact-wrapper .container form p .wpcf7-form-control-wrap {
+  width: 80rem;
+}
+
+#contact-wrapper .container form p .wpcf7-form-control-wrap span {
   display: inline-block;
   width: 80rem;
 }
 
-#contact-wrapper .container form p label input, #contact-wrapper .container form p label textarea {
+#contact-wrapper .container form p .wpcf7-form-control-wrap input, #contact-wrapper .container form p .wpcf7-form-control-wrap textarea {
   border: 1px solid black;
   width: 80rem;
 }
 
-#contact-wrapper .container form p label textarea {
+#contact-wrapper .container form p .wpcf7-form-control-wrap textarea {
   resize: none;
+}
+
+#contact-wrapper .container form p .require-label {
+  padding: .2rem .4rem;
+  border-radius: 1rem 0;
+  color: white;
+  font-size: 1.2rem;
+}
+
+#contact-wrapper .container form p .must {
+  background-color: #ca0000;
+}
+
+#contact-wrapper .container form p .arbitrary {
+  background-color: #575757;
+}
+
+#contact-wrapper .container form .twitter {
+  text-align: center;
+}
+
+#contact-wrapper .container form .twitter .fa-twitter {
+  font-size: 1.6rem;
+  color: #00acee;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1000px) {
@@ -468,13 +533,13 @@ nav .container .sp {
     text-align: left;
   }
   /* contact */
+  #contact-wrapper .container form p {
+    width: 50rem;
+  }
   #contact-wrapper .container form p label {
     width: 50rem;
   }
-  #contact-wrapper .container form p label span {
-    width: 50rem;
-  }
-  #contact-wrapper .container form p label input, #contact-wrapper .container form p label textarea {
+  #contact-wrapper .container form p label .wpcf7-form-control-wrap input, #contact-wrapper .container form p label .wpcf7-form-control-wrap textarea {
     width: 50rem;
   }
 }
@@ -620,7 +685,8 @@ nav .container .sp {
             transform: scale(0.75, 0.75);
   }
   #works-wrapper {
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
   }
   #works-wrapper .container .slider {
     margin-top: 1rem;
@@ -628,17 +694,26 @@ nav .container .sp {
   #works-wrapper .container .slider figcaption {
     text-align: left;
   }
+  #works-wrapper .container .slider .wp-block-group__inner-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 3rem 3rem 30rem;
+        grid-template-rows: 3rem 3rem 30rem;
+  }
   /* contact */
   #contact-wrapper {
     height: auto;
   }
+  #contact-wrapper .container {
+    width: 30rem;
+  }
+  #contact-wrapper .container form p {
+    width: 30rem;
+  }
   #contact-wrapper .container form p label {
     width: 30rem;
   }
-  #contact-wrapper .container form p label span {
-    width: 30rem;
-  }
-  #contact-wrapper .container form p label input, #contact-wrapper .container form p label textarea {
+  #contact-wrapper .container form p label .wpcf7-form-control-wrap input, #contact-wrapper .container form p label .wpcf7-form-control-wrap textarea {
     width: 30rem;
   }
 }

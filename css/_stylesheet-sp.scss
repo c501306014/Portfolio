@@ -76,15 +76,21 @@
     }
 
     #works-wrapper{
-        // height: auto;
-        height:100vh;
+        height: auto;
+        // height:100vh;
+        min-height: 100vh;
         .container{
             .slider{
                 figcaption{
                     text-align: left;
                 }
                 margin-top: 1rem;
+                .wp-block-group__inner-container{
+                    display: grid;
+                    grid-template-rows: 3rem 3rem 30rem;
+                }
             }
+
         }
     }
 
@@ -92,15 +98,16 @@
     #contact-wrapper{
         height: auto;
         .container{
+            width:30rem;
             form{
                 p{
+                    width: 30rem;
                     label{
                         width:30rem;
-                        span{
-                            width: 30rem;
-                        }
-                        input, textarea{
-                            width: 30rem;
+                        .wpcf7-form-control-wrap{
+                            input, textarea{
+                                width: 30rem;
+                            }
                         }
                     }
                 }
