@@ -7,6 +7,7 @@ function my_scripts()
     wp_enqueue_script('scroll-to-top', get_template_directory_uri() . '/js/scroll-to-top.js', array(), false, true);
     wp_enqueue_script('carousel', get_template_directory_uri() . '/js/carousel.js', array(), false, true);
     wp_enqueue_script('top-view', get_template_directory_uri() . '/js/top-view.js', array(), false, true);
+    wp_enqueue_script('recaptcha', get_template_directory_uri() . '/js/recaptcha.js', array(), false, true);
 }
 add_action('wp_enqueue_scripts', 'my_scripts');
 
