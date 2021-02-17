@@ -10,6 +10,16 @@ body {
   line-height: 1.5;
 }
 
+@font-face {
+  font-family: "din 1451alt";
+  src: url("../fonts/DIN1451ALT.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "din 1451alt g";
+  src: url("../fonts/DIN1451ALT G.woff2") format("woff2");
+}
+
 .container {
   font-size: 1.6rem;
   max-width: 117rem;
