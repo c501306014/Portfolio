@@ -60,9 +60,22 @@
 
                 #about-grid {
                     grid-template-columns: 68rem;
+                    row-gap: 0;
                     margin: auto;
 
+                    .about-description-head {
+                        margin-top: 1.6rem;
+                        background-color: #1d809fff;
+                        color: white;
+                        padding: .5rem;
+                    }
+
+                    .about-description-content {
+                        padding: .5rem;
+                    }
+
                     .skills .wp-block-group__inner-container {
+                        margin-top: 2rem;
                         grid-template-columns: 1fr 1fr 1fr 1fr;
                         grid-template-rows: 10rem 10rem;
                     }
@@ -71,6 +84,7 @@
 
         }
     }
+
 
     #works-wrapper {
         height: auto;
