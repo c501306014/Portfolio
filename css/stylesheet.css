@@ -20,6 +20,10 @@ body {
   src: url("../fonts/DIN1451ALT G.woff2") format("woff2");
 }
 
+h1 {
+  font-family: "din 1451alt";
+}
+
 .container {
   font-size: 1.6rem;
   max-width: 117rem;
@@ -226,7 +230,7 @@ nav .container .sp {
   max-height: 100vh;
 }
 
-#top-wrapper img {
+#top-wrapper #hero-image {
   position: absolute;
   top: 0;
   width: 100%;
@@ -262,6 +266,11 @@ nav .container .sp {
 #top-wrapper .container .heading h1 {
   border-bottom: inset 1px white;
   color: white;
+}
+
+#top-wrapper .container .heading h1 #title-image {
+  width: 80%;
+  height: auto;
 }
 
 #top-wrapper .container .heading p {
@@ -460,7 +469,8 @@ nav .container .sp {
   width: 80rem;
 }
 
-#contact-wrapper .container form p .wpcf7-form-control-wrap input, #contact-wrapper .container form p .wpcf7-form-control-wrap textarea {
+#contact-wrapper .container form p .wpcf7-form-control-wrap input,
+#contact-wrapper .container form p .wpcf7-form-control-wrap textarea {
   border: 1px solid black;
   width: 80rem;
 }
@@ -533,9 +543,20 @@ nav .container .sp {
   #about-wrapper .container .about-main #about-grid {
     -ms-grid-columns: 68rem;
         grid-template-columns: 68rem;
+    row-gap: 0;
     margin: auto;
   }
+  #about-wrapper .container .about-main #about-grid .about-description-head {
+    margin-top: 1.6rem;
+    background-color: #1d809fff;
+    color: white;
+    padding: .5rem;
+  }
+  #about-wrapper .container .about-main #about-grid .about-description-content {
+    padding: .5rem;
+  }
   #about-wrapper .container .about-main #about-grid .skills .wp-block-group__inner-container {
+    margin-top: 2rem;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: 10rem 10rem;
@@ -557,7 +578,8 @@ nav .container .sp {
   #contact-wrapper .container form p label {
     width: 50rem;
   }
-  #contact-wrapper .container form p label .wpcf7-form-control-wrap input, #contact-wrapper .container form p label .wpcf7-form-control-wrap textarea {
+  #contact-wrapper .container form p label .wpcf7-form-control-wrap input,
+  #contact-wrapper .container form p label .wpcf7-form-control-wrap textarea {
     width: 50rem;
   }
 }
@@ -731,7 +753,8 @@ nav .container .sp {
   #contact-wrapper .container form p label {
     width: 30rem;
   }
-  #contact-wrapper .container form p label .wpcf7-form-control-wrap input, #contact-wrapper .container form p label .wpcf7-form-control-wrap textarea {
+  #contact-wrapper .container form p label .wpcf7-form-control-wrap input,
+  #contact-wrapper .container form p label .wpcf7-form-control-wrap textarea {
     width: 30rem;
   }
 }

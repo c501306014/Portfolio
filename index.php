@@ -7,7 +7,12 @@
     <?php endif; ?>
     <div class="container">
         <div class="heading">
-            <h1><?php bloginfo('title'); ?></h1>
+            <h1>
+                <!-- Welcome to Portfolio Site -->
+                <img id="title-image" src="<?php bloginfo('template_directory'); ?>/images/title.png">
+            </h1>
+
+            <!-- <?php bloginfo('title'); ?> -->
             <p><?php bloginfo('description'); ?></p>
         </div>
     </div>
