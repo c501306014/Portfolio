@@ -1,32 +1,39 @@
-@media screen and (max-width: 720px){
+@media screen and (max-width: 720px) {
     @import "hamburger-btn";
-    .container{
+
+    .container {
         height: auto;
         max-width: 32rem;
-        h1{
+
+        h1 {
             font-size: 2.4rem;
         }
-        h2{
+
+        h2 {
             font-size: 1.6rem;
         }
     }
 
-    nav{
+    nav {
         background-color: transparent;
         height: 0;
-        margin-top:0;
-        .container{
-            
-            .custom-logo{
+        margin-top: 0;
+
+        .container {
+
+            .custom-logo {
                 display: none;
             }
-            .menu{
-                display:none;
+
+            .menu {
+                display: none;
             }
-            .sp{
-                display:block;
-                .hamburger_btn{
-                    @include hamburger-btn($main-color,white);
+
+            .sp {
+                display: block;
+
+                .hamburger_btn {
+                    @include hamburger-btn($main-color, white);
                 }
 
                 @include hamburger-sidebar;
@@ -34,58 +41,65 @@
         }
     }
 
-    #top-wrapper{
-        padding-top:0;
-        .container{
-            .heading{
-                h1{
-                    
-                }
-                p{
+    #top-wrapper {
+        padding-top: 0;
+
+        .container {
+            .heading {
+                h1 {}
+
+                p {
                     font-size: 1.2rem;
                 }
             }
         }
     }
 
-    #about-wrapper{
+    #about-wrapper {
         height: auto;
-        .container{
-            .about-main{
-                
+
+        .container {
+            .about-main {
+
                 flex-direction: column;
                 font-size: 1.6rem;
 
-                .wp-image-16{
-                    width:16rem;
+                .wp-image-16 {
+                    width: 16rem;
                 }
-                #about-grid{
+
+                #about-grid {
                     grid-template-columns: 28rem;
                     margin: auto;
-                    .skills .wp-block-group__inner-container{
+
+                    .skills .wp-block-group__inner-container {
                         grid-template-columns: 1fr 1fr;
                         grid-template-rows: 10rem 10rem 10rem 10rem;
-                        img{
+
+                        img {
                             transform: scale(.75, .75);
                         }
                     }
                 }
             }
-            
+
         }
     }
 
-    #works-wrapper{
+    #works-wrapper {
         height: auto;
         // height:100vh;
         min-height: 100vh;
-        .container{
-            .slider{
-                figcaption{
+
+        .container {
+            .slider {
+                figcaption {
                     text-align: left;
                 }
+
                 margin-top: 1rem;
-                .wp-block-group__inner-container{
+
+                .wp-block-group__inner-container {
                     display: grid;
                     grid-template-rows: 3rem 3rem 30rem;
                 }
@@ -95,17 +109,23 @@
     }
 
     /* contact */
-    #contact-wrapper{
+    #contact-wrapper {
         height: auto;
-        .container{
-            width:30rem;
-            form{
-                p{
+
+        .container {
+            width: 30rem;
+
+            form {
+                p {
                     width: 30rem;
-                    label{
-                        width:30rem;
-                        .wpcf7-form-control-wrap{
-                            input, textarea{
+
+                    label {
+                        width: 30rem;
+
+                        .wpcf7-form-control-wrap {
+
+                            input,
+                            textarea {
                                 width: 30rem;
                             }
                         }
