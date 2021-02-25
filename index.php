@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+
 <!-- Top -->
 <section id="top-wrapper">
     <?php if (get_header_image()) :   ?>
@@ -51,7 +52,7 @@
         </div>
         <div id="app">
             <div class="slider">
-                <carousel :per-page-custom="[[720,2], [0, 1]]">
+                <carousel :navigation-enabled="true" :per-page-custom="[[720,2], [0, 1]]">
                     <?php
                     $page_data = get_page_by_path('works');
                     $page = get_post($page_data);
