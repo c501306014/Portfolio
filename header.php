@@ -50,6 +50,10 @@
     <script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
     <!-- vue carousel -->
     <script src="https://cdn.jsdelivr.net/npm/vue-carousel@0.18.0/dist/vue-carousel.min.js"></script>
+    <!-- stop reading jquery from wordpress -->
+    <?php wp_deregister_script('jquery'); ?>
+    <!-- reading jquery from google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <?php wp_head(); ?>
 </head>
 
