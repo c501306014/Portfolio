@@ -26,3 +26,12 @@ function resizeHandler() {
     // alert(elem.style.height)
     image.style.height = vh + 'px';
 }
+
+
+// loadingのdivを取得
+let loading = document.getElementById('loading');
+// 読み込みが完了したら
+window.addEventListener('load', function () {
+  // loadingのdivを非表示に
+  loading.style.display= 'none';
+});

@@ -1,5 +1,10 @@
 <?php get_header(); ?>
 
+<!-- ローディング用 -->
+<div id="loading">
+    <img src="<?php bloginfo('template_directory'); ?>/images/loading.gif" alt="loading">
+</div>
+
 
 <!-- Top -->
 <section id="top-wrapper">

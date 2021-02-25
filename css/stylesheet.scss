@@ -188,6 +188,10 @@ nav {
                         }
                     }
                 }
+
+                figcaption {
+                    text-align: left;
+                }
             }
 
             .wp-block-group__inner-container {
@@ -227,13 +231,20 @@ nav {
                     font-size: 2.4rem;
                     color: white;
                     padding: 1rem 2.4rem;
+                    width: 100%;
                     border-radius: 1rem 1rem;
                     background-color: #ff7a59;
                     box-shadow: 0 .4rem darken(#ff7a59, 50%);
                     margin: 0 auto;
 
+                    &:hover {
+                        background-color: lighten(#ff7a59, 10%);
+                        box-shadow: 0 .4rem darken(#ff7a59, 40%);
+                    }
+
                     &:active {
                         position: relative;
+                        background-color: #ff7a59;
                         top: .4rem;
                         box-shadow: none;
                     }
@@ -293,6 +304,11 @@ nav {
             }
         }
     }
+}
+
+.grecaptcha-badge {
+    bottom: 8rem !important;
+
 }
 
 @import "stylesheet-tb";
