@@ -5,7 +5,6 @@ var ScrollToTop = new Vue({
     },
     methods:{
         change(){
-            console.log(window.pageYOffset);
             if(window.pageYOffset > 150){
                 this.isActive = true;
             }else{
