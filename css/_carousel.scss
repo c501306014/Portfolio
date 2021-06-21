@@ -1,0 +1,14 @@
+.VueCarousel-slide{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        cursor: grab;
+    }
+    &:active{
+        cursor: grabbing;
+    }
+    .wp-block-group{
+        margin: 0 1.6rem;
+    }
+}

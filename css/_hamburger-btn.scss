@@ -1,0 +1,82 @@
+@import "variables";
+//ハンバーガーボタンおよびサイドバーに関するスタイルをすべてここで記述
+
+@mixin hamburger-btn ($background-color, $line-color){
+    $line-top: 2rem; //３本線の高さ調整用
+    
+    position: absolute; //常に最上部に表示したいので固定
+    top: 1rem;
+    right: 1rem;                        
+    width: 6rem;
+    height: 6rem;
+    background-color: $background-color;
+    border-radius: 50%;
+    cursor: pointer;
+
+    z-index: 50;
+    .line {
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        width: 3.2rem;
+        height: .2rem;
+        background: $line-color;
+        text-align: center;
+    }
+    .line_01 {
+    top: $line-top;
+    transition: 0.4s ease;
+    }
+    .line_02 {
+    top: $line-top + 1rem;
+    transition: 0.4s ease;
+    }
+    .line_03 {
+    top: $line-top + 2rem;
+    transition: 0.4s ease;
+    }
+    .btn_line01 {
+        transform: translateY(1rem) rotate(-45deg);
+        transition: 0.4s ease;
+        }
+        .btn_line02 {
+        transition: 0.4s ease;
+        opacity: 0;
+        }
+        .btn_line03 {
+        transform: translateY(-1rem) rotate(45deg);
+        transition: 0.4s ease;
+        }
+}
+
+@mixin hamburger-sidebar{
+        .menu-sp li {
+        list-style: none;
+        line-height: 1;
+        padding: 1rem;
+        }
+        .menu-sp {
+        background-color: rgba(33,33,33,.8);
+        z-index: 30;
+        padding: 2rem 1rem;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        text-align: center;
+        }
+        .menu-sp a {
+        display: inline-block;
+        width: auto;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 3.2rem;
+        padding: 0 2rem;
+        }
+        .menu-sp ul{
+        margin: 1rem;
+        padding: 0;
+        }
+}
